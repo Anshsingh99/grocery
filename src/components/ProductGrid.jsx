@@ -150,11 +150,11 @@ function ProductGrid() {
             <div className="flex items-baseline mt-2">
               {product.sale ? (
                 <>
-                  <span className="text-lg font-bold text-green-600">${product.salePrice}</span>
-                  <span className="text-sm text-gray-500 line-through ml-2">${product.price}</span>
+                  <span className="text-lg font-bold text-green-600">INR{product.salePrice}</span>
+                  <span className="text-sm text-gray-500 line-through ml-2">INR{product.price}</span>
                 </>
               ) : (
-                <span className="text-lg font-bold text-green-600">${product.price}</span>
+                <span className="text-lg font-bold text-green-600">INR{product.price}</span>
               )}
               <span className="text-gray-500 text-sm ml-1">/ {product.unit}</span>
             </div>
